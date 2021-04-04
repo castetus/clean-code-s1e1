@@ -8,7 +8,7 @@
     />
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8" />
   </head>
-  <body>
+  <body class="page">
     <div class="header">
       <img src="./eisenhower-matrix.jpg" />
       <a
@@ -22,37 +22,37 @@
       <p id="add-item">
         <label for="new-task">Add Item</label>
         <input id="new-task" type="text" />
-        <button>Add</button>
+        <button class="btn">Add</button>
       </p>
       <h3>Todo</h3>
       <ul id="incomlete-tasks">
-        <li>
+        <li class="list__item">
           <input type="checkbox" />
           <label class="task">Pay Bills</label>
           <input type="text" />
-          <button class="edit">Edit</button>
-          <button class="delete">
+          <button class="btn" class="edit">Edit</button>
+          <button class="btn" class="delete">
             <img src="./remove.svg" />
           </button>
         </li>
-        <li class="edit-mode">
+        <li  class="list__item" class="edit-mode">
           <input type="checkbox" />
           <label class="task">Go Shopping</label>
           <input type="text" value="Go Shopping" class="task" />
-          <button class="edit">Save</button>
-          <button class="delete">
+          <button class="btn" class="edit">Save</button>
+          <button class="btn" class="delete">
             <img src="./remove.svg" />
           </button>
         </li>
       </ul>
       <h3>Completed</h3>
       <ul id="completed-tasks">
-        <li>
+        <li class="list__item">
           <input type="checkbox" checked />
-          <label class="task-label">See the Doctor</label>
+          <label class="task">See the Doctor</label>
           <input type="text" />
-          <button class="edit-button">Edit</button>
-          <button class="delete-button">
+          <button class="btn" class="edit-button">Edit</button>
+          <button class="btn" class="delete">
             <img src="./remove.svg" />
           </button>
         </li>
