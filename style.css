@@ -21,11 +21,13 @@ body {
 }
 
 @media (max-width:768px) {
+
   .header { 
     text-align: center;
   }
+
 }
-.main{
+.main {
   display: block;
   width: 400px;
   margin: 0 auto 0;
