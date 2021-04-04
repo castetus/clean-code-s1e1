@@ -109,9 +109,6 @@ button{
 
 .task__checkbox {
   margin: 0 10px;
-  box-sizing: border-box;
-  font-size: 18px;
-  width: 226px;
 }
 .task__text-field {
   width: 226px;
