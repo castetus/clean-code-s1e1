@@ -21,7 +21,7 @@ button{
 }
 .header {
   width: 500px;
-  margin: 0 auto;
+  margin: 0 auto 11px;
   display: block;
   text-align: right;
 }
@@ -40,12 +40,20 @@ button{
 }
 .main {
   display: block;
-  width: 400px;
+  width: 500px;
   margin: 0 auto 0;
 }
-.block__label {
+.task__label {
   width: 56%;
   display: inline-block;
+  flex-grow: 1;
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+.task__wrapper{
+  display: flex;
+  align-items: center;
 }
 .btn {
   background: none;
@@ -60,7 +68,7 @@ button{
   color: #3a3a3a;
 }
 /* Heading */
-.block__heading {
+.task__heading {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -69,7 +77,8 @@ button{
   margin: 0;
   text-transform: uppercase;
 }
-.block__text-field {
+.task__text-field {
+  flex-grow: 1;
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -81,30 +90,31 @@ button{
   font-family: Lato, sans-serif;
   color: #888;
 }
-.block__text-field:focus {
+.task__text-field:focus {
   color: #333;
 }
 
 /* Task list */
-.block__item {
+.task__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.block__item > * {
+.task__item > * {
   vertical-align: middle;
 }
 
-.block__checkbox {
+.task__checkbox {
   margin: 0 10px;
-}
-.block__label {
-  padding-left: 10px;
+}http://127.0.0.1:5500/index.html
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-.block__text-field {
+.task__text-field {
   width: 226px;
 }
 .btn_delete:hover {
@@ -120,32 +130,32 @@ button{
 }
 
 /* Completed */
-.block__label_completed {
+.task__label_completed {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.block__text-field {
+.task__text-field {
   display: none;
 }
 
-.block__text-field_edit {
+.task__text-field_edit {
   display: inline-block;
   width: 224px;
 }
 
-.block__label_edit {
+.task__label_edit {
   display: none;
 }
 /* New Task */
-.block__label_new-task {
+.task__label_new-task {
   display: block;
   margin: 0 0 20px;
 }
-.block__text-field_new {
+.task__text-field_new {
   width: 318px;
-  margin-top: 1em;
+  margin: 20px 0 16px;
   display: inline-block;
 }
 .btn_add:hover {
